@@ -15,13 +15,17 @@ int counter[1000001] = {};
 int main()
 {
     ahmed
-        ll tot, a[5];
-    cin >> a[1], a[2], a[3], a[4];
-    string s;
+        ll a = 0, b = 0, c = 0, d = 0, cnt = 0; string s;
+    cin >> a >> b >> c >> d;
     cin >> s;
-    for (auto c : s);
-    tot += a[c - '0'];
-    cout << tot << endl;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '1')cnt += a;
+        if (s[i] == '2')cnt += b;
+        if (s[i] == '3')cnt += c;
+        if (s[i] == '4')cnt += d;
+
+    }
+    cout << cnt;
 
 }
 //مهما الدنيا إتنيلت ضلمت لازم يبقى عندك زفت أمل و تعرف إن في نور في أخر أم النفق//
